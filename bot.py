@@ -1,10 +1,12 @@
 import asyncio
+import os
 from aiogram import Bot, Dispatcher, types
 from aiogram.types import WebAppInfo, MenuButtonWebApp
 from aiogram.filters import Command
 
 # مفتاح البوت (Token)
-API_TOKEN = '8030434283:AAG4b_amj9uTU6a4rxxiN_Xv623NUsI7MHw'
+
+API_TOKEN = os.getenv('BOT_TOKEN')
 
 # رابط موقعك
 WEB_APP_URL = 'https://zippy-flan-60df29.netlify.app/'
